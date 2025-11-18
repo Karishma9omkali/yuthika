@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Yuthika Royal Events</title>
+</head>
+
+<body style="margin:0; font-family:'Playfair Display', serif; background:#fff9f2;">
+
+    <div style="background:#800000; padding:25px; text-align:center;">
+        <h1 style="color:#c9a66b; font-size:3rem; margin:0;">Secure Payment</h1>
+    </div>
+
+    <div style="max-width:600px; margin:50px auto; background:white; padding:30px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.2); border-left:8px solid #800000;">
+
+        <h2 style="text-align:center; color:#800000;">Complete Your Booking</h2>
+        <p style="color:#4a0e0e; text-align:center;">Pay ₹999 to confirm your event appointment.</p>
+
+        <form action="thankyou.html" method="GET" style="display:flex; flex-direction:column; gap:20px;">
+
+            <input type="text" placeholder="Cardholder Name" required 
+                   style="padding:15px; border:2px solid #800000; border-radius:8px;">
+
+            <input type="number" placeholder="Card Number" required 
+                   style="padding:15px; border:2px solid #800000; border-radius:8px;">
+
+            <div style="display:flex; gap:20px;">
+                <input type="text" placeholder="Expiry (MM/YY)" required 
+                       style="padding:15px; border:2px solid #800000; border-radius:8px; width:50%;">
+                <input type="text" placeholder="CVV" required 
+                       style="padding:15px; border:2px solid #800000; border-radius:8px; width:50%;">
+            </div>
+
+            <button type="submit" 
+                    style="padding:15px; background:#c9a66b; border:none; border-radius:8px; font-size:1.3rem; color:#800000; cursor:pointer;">
+                Pay ₹999 →
+            </button>
+        </form>
+
+        <div style="text-align:center; margin-top:20px;">
+            <a href="appointment.html" style="color:#800000; text-decoration:none;">← Back to Appointment</a>
+        </div>
+    </div>
+
+</body>
+</html>
