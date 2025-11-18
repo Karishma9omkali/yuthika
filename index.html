@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yuthika Royal Events</title>
+    <meta charset="UTF-8">
+    <title>Yuthika Events</title>
+    <style>
+        body {
+            margin: 0;
+            background: #2b0000;
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+        header {
+            background: linear-gradient(to right, #4d0000, #8b0000);
+            padding: 20px;
+            text-align: center;
+            color: gold;
+            font-size: 38px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1529634806980-c6368e4a1a49?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gold;
+            text-shadow: 0px 0px 8px black;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: gold;
+            font-size: 32px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+        .card {
+            background: #3b0000;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid gold;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: #4d0000;
+        }
+        .card h3 {
+            color: gold;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            margin: 40px auto;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            background: gold;
+            color: maroon;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: rgb(255, 230, 0);
+        }
+        footer {
+            background: #1a0000;
+            padding: 20px;
+            text-align: center;
+            color: gold;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
-<body style="margin:0; font-family: 'Playfair Display', serif; background:#f8f5f0; color:#4a0e0e;">
+<body>
 
-    <!-- HERO SECTION -->
-    <div style="position:relative; background:url('https://images.unsplash.com/photo-1541533260371-b8fc9b596d84') center/cover no-repeat; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+<header>Yuthika Events</header>
 
-        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(128,0,0,0.6);"></div>
+<div class="hero">
+    Royal Moments Crafted With Elegance ✨
+</div>
 
-        <h1 style="font-size:4rem; color:white; z-index:2; letter-spacing:4px; text-transform:uppercase;">
-            Yuthika Royal Events
-        </h1>
+<h2>Our Premium Services</h2>
 
-        <p style="font-size:1.4rem; color:white; z-index:2; margin-top:10px;">
-            Crafting Moments • Creating Magic • Delivering Luxury
-        </p>
+<div class="services">
+    <div class="card"><h3>Wedding Planning</h3><p>Complete décor, venue, catering & more.</p></div>
+    <div class="card"><h3>Birthday Events</h3><p>Theme décor, photography & entertainment.</p></div>
+    <div class="card"><h3>Housewarming</h3><p>Traditional setups & floral decorations.</p></div>
+    <div class="card"><h3>Corporate Events</h3><p>Meetings, annual celebrations & launches.</p></div>
+    <div class="card"><h3>Baby Shower</h3><p>Elegant décor, balloon setups, photography.</p></div>
+    <div class="card"><h3>Engagements</h3><p>Stage décor, lighting & guest management.</p></div>
+</div>
 
-        <a href="appointment.html" 
-           style="margin-top:30px; padding:14px 35px; background:#c9a66b; color:#800000; font-size:1.3rem; border-radius:35px; text-decoration:none; z-index:2; font-weight:bold;">
-           Book Appointment →
-        </a>
-    </div>
+<a class="btn" href="appointment.html">Book an Appointment</a>
 
-    <!-- SERVICES SECTION -->
-    <div id="services" style="padding:60px 10%;">
-        <h2 style="text-align:center; font-size:2.8rem; color:#800000; margin-bottom:40px; letter-spacing:2px;">
-            Our Premium Services
-        </h2>
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:30px;">
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Wedding Planning</h3>
-                <p>Royal decor, mandap design, catering, photography, and complete event management.</p>
-            </div>
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Birthday Celebrations</h3>
-                <p>Themed decoration, customised cakes, surprise entries, and entertainment packages.</p>
-            </div>
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Housewarming Events</h3>
-                <p>Puja arrangements, floral decor, traditional themes, and hospitality coordination.</p>
-            </div>
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Corporate Events</h3>
-                <p>Annual meets, conferences, formal decor, and event hosting arrangements.</p>
-            </div>
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Engagement & Reception</h3>
-                <p>Luxury stage décor, themed entrances, lighting, music, and guest management.</p>
-            </div>
-
-            <div style="background:white; border-left:6px solid #800000; padding:20px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
-                <h3 style="color:#800000; font-size:1.6rem;">Custom Themes</h3>
-                <p>Royal gold, floral pastel, modern luxury, or any theme you desire—fully customisable.</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div style="background:#800000; padding:30px; text-align:center; color:white;">
-        <p style="margin:0;">© 2025 Yuthika Royal Events • All Rights Reserved</p>
-    </div>
+<footer>© 2025 Yuthika Events • Crafted with Royal Elegance</footer>
 
 </body>
 </html>
